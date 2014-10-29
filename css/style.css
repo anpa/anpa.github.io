@@ -51,7 +51,7 @@ section {
 section:nth-of-type(1) {
   min-height: 100%;
   background-color: #000;
-  background: url(../img/test8.JPG) no-repeat fixed;
+  background: url(../img/test7.JPG) no-repeat fixed;
   background-position: 100% 80%;
   background-size: cover;
   -webkit-background-size: cover;
@@ -63,7 +63,7 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
-  background-color: #fff;
+  background-color: lightblue;
 }
 
 section:nth-of-type(3) {
@@ -97,7 +97,7 @@ section:nth-of-type(5) {
 
 section:nth-of-type(6) {
   min-height: 500px;
-  background-color: #fff;
+  background-color: #A7DBD8;
 }
 
 footer {
@@ -171,7 +171,7 @@ header nav ul li:last-child {
 }
 .project .overlay {
   visibility: hidden;
-  background-color: rgba(0, 150, 225, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -219,11 +219,8 @@ header nav ul li:last-child {
   display: inline;
   margin: 5px;
 }
-.social-list a {
-  color: #69D2E7;
-}
 .social-list a:hover {
-  color: #A7DBD8;
+  color: #69D2E7;
 }
 
 .circular {
