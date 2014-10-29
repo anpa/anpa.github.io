@@ -1,0 +1,255 @@
+/* MAIN STYLES */
+
+/*
+* Small screens (default)
+* Medium screens (640px = 40rem)
+* Large screens (1024px = 64rem)
+*/
+
+$background-color: #51a7b6;
+$font-neutron: 'Neuton', serif;
+$font-montserrat: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+$header-size:2.5rem;
+
+html { font-size: 100%; }
+@media (min-width: 40rem) {
+	html { font-size: 112%; }}
+@media (min-width: 64rem) {
+	html { font-size: 120%; }}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-montserrat;
+	font-weight: 700;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	text-align: justify;
+	font-family: $font-neutron;
+	font-size: 20px;
+}
+
+section {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section:nth-of-type(1) {
+	min-height: 100%;
+	background-color: #000;
+	background: url(../img/test7.jpg) no-repeat bottom center fixed;
+	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+	font-size: 150%;
+	color: white;
+
+	padding-top: 20%;
+}
+
+section:nth-of-type(2) {
+	background-color: lightblue;
+}
+
+section:nth-of-type(3) {
+	min-height: 500px;
+	background-color: #000;
+	background: url(../img/test3.jpg) no-repeat bottom center fixed;
+	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+	/*filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);*/
+}
+
+section:nth-of-type(4) {
+	background-color: white;
+}
+
+section:nth-of-type(5) {
+	min-height: 300px;
+	background-color: #000;
+	background: url(../img/test5.jpg) no-repeat bottom center fixed;
+	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+section:nth-of-type(6) {
+	min-height: 500px;
+	background-color: #A7DBD8;
+}
+
+footer {
+	text-align: center;
+	font-size: 80%;
+}
+
+.section-title {
+	margin-bottom: 30px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	z-index: 1030;
+	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 10px 0;
+
+	.logo {
+		float: left;
+		line-height: $header-size;
+		text-transform: uppercase;
+		letter-spacing: -3px;
+	}
+
+	nav {
+		float: right;
+		font-family: $font-montserrat;
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul li {
+			list-style: none;
+			display: inline;
+			margin-right: 20px;
+			line-height: $header-size;
+		}
+
+		ul li:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.btn {
+	position: relative;
+	cursor: pointer;
+	font-family: $font-montserrat;
+	color: #ffffff;
+	font-size: 16px;
+	background: #3498db;
+	padding: 10px 20px 10px 20px;
+	border-bottom: solid #1f628d 4px;
+	text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.btn:active {
+	top: 2px;
+	border-bottom: solid #1f628d 2px;
+}
+
+.project {
+
+	height: 347px;
+	overflow: hidden;
+
+	.overlay {
+
+		visibility: hidden;
+		background-color: rgba(0,0,0,0.8);
+		margin: 0 auto;
+		
+		width: 100%;
+		height: 100%;
+
+		z-index: 1000;
+
+		color: white;
+
+		position:absolute;
+		bottom: 0px;
+		left: 0px;
+
+		.caption{
+
+			padding: 1.5rem;
+			
+			position: absolute;
+			bottom: 20px;
+			width: 100%;
+
+			h3 {
+				text-align: left;
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+   		height: 100%;
+		cursor: pointer;
+	}
+}
+
+.project:hover {
+	.overlay {
+		visibility: visible;
+	}
+}
+
+.social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline;
+        margin: 5px;
+    }
+
+    a:hover {
+    	color: #69D2E7;
+    }
+}
+
+.circular {
+	margin: 20px auto 50px auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	background: url('../img/test6.jpg') no-repeat 50% 50% scroll;
+	background-size: cover;
+
+}

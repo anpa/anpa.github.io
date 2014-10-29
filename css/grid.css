@@ -1,0 +1,85 @@
+/** GRID SYSTEM **/
+/*
+* Small screens (default)
+* Medium screens (640px = 40rem)
+* Large screens (1024px = 64rem)
+*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+  [class^="col-"] {
+    float: left;
+    list-style: none;
+    position: relative;
+  }
+
+  .col-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33333%;
+  }
+
+  .col-8 {
+    width: 66.66667%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33333%;
+  }
+
+  .col-11 {
+    width: 91.66667%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
