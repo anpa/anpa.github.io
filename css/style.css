@@ -37,93 +37,75 @@ a {
 }
 
 p {
-  text-align: justify;
   font-family: "Neuton", serif;
   font-size: 20px;
 }
 
 /* HEADER */
-.nav-closed {
-  display: none;
-}
-
-.nav-open {
-  display: block;
-}
-
 header {
-  position: fixed;
-  top: 0;
-  z-index: 1030;
   width: 100%;
+  position: fixed;
+  z-index: 1030;
+  line-height: 3.5rem;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 10px 0;
 }
 header .logo {
   display: block;
   float: left;
-  line-height: 2.5rem;
   text-transform: uppercase;
   letter-spacing: -3px;
 }
-header #toggle-nav {
-  font-size: 25px;
+header #toggle-nav, header nav {
   display: block;
   float: right;
-  line-height: 2.5rem;
+}
+header #toggle-nav {
+  font-size: 1.5rem;
   cursor: pointer;
 }
-header #toggle-nav:after {
-  clear: both;
+header nav.nav-closed {
+  display: none;
+}
+header nav.nav-open {
+  display: block;
 }
 header nav {
-  float: right;
-  display: block;
   width: 100%;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header nav ul {
-  margin: 10px 0 0 0;
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 header nav ul li {
   border-top: solid gray 1px;
-  list-style: none;
-  text-align: center;
 }
 header nav ul li a {
   padding: 10px 0;
   display: block;
   width: 100%;
-  line-height: 2.5rem;
+  line-height: 2.33333rem;
 }
 header nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 40rem) {
-  .nav-closed {
-    display: block;
-  }
-
-  header {
-    padding: 10px 0;
-  }
   header #toggle-nav {
     display: none;
+  }
+  header nav.nav-closed {
+    display: block;
   }
   header nav {
     width: auto;
   }
-  header nav ul {
-    margin: 0;
-    display: block;
-  }
   header nav ul li {
     border: 0;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 1.2rem;
   }
   header nav ul li a {
     padding: 0;
@@ -135,13 +117,11 @@ header nav ul li:hover {
 /* SECTIONS */
 section {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 4.5rem 0;
 }
 
 /* HOME */
 #home {
-  min-height: 100%;
   background-color: #000;
   background: url(../img/test8.JPG) no-repeat fixed;
   background-position: center bottom;
@@ -151,7 +131,8 @@ section {
   -o-background-size: cover;
   font-size: 150%;
   color: white;
-  padding-top: 20%;
+  padding: 12.5rem 0;
+  height: 100%;
 }
 #home div#filter {
   position: absolute;
@@ -164,51 +145,9 @@ section {
   position: relative;
 }
 
-section:nth-of-type(2) {
+/* ABOUT */
+#about {
   background-color: #fff;
-}
-
-section:nth-of-type(3) {
-  min-height: 500px;
-  background-color: #000;
-  background: url(../img/test3.jpg) no-repeat fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  /*filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);*/
-}
-
-section:nth-of-type(4) {
-  background-color: white;
-}
-
-section:nth-of-type(5) {
-  min-height: 300px;
-  background-color: #000;
-  background: url(../img/test5.jpg) no-repeat fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-section:nth-of-type(6) {
-  min-height: 500px;
-  background-color: #fff;
-}
-
-footer p {
-  text-align: center;
-  font-size: 80%;
-}
-
-.section-title {
-  margin-bottom: 30px;
 }
 
 .btn {
@@ -225,7 +164,6 @@ footer p {
 
 .btn:hover {
   background: #3cb0fd;
-  text-decoration: none;
 }
 
 .btn:active {
@@ -233,50 +171,87 @@ footer p {
   border-bottom: solid #1f628d 2px;
 }
 
+/* PAUSE */
+#pause-work {
+  min-height: 500px;
+  background-color: #000;
+  background: url(../img/test3.jpg) no-repeat fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* PROJECTS */
+#projects {
+  background-color: #ffffff;
+}
+
 .project {
   cursor: pointer;
-  height: 347px;
-  overflow: hidden;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .project .overlay {
   visibility: hidden;
-  background-color: rgba(0, 150, 225, 0.5);
-  margin: 0 auto;
+  position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1000;
-  color: white;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  background-color: rgba(0, 150, 225, 0.5);
+  z-index: 100;
 }
 .project .overlay .caption {
-  padding: 1.5rem;
   position: absolute;
-  bottom: 20px;
   width: 100%;
-}
-.project .overlay .caption h3 {
+  bottom: 0;
+  padding: 1.5rem;
+  color: white;
   text-align: left;
 }
 .project .overlay .caption p {
   margin: 0;
 }
-.project img {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
 
 .project:hover img {
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
 .project:hover .overlay {
   visibility: visible;
+}
+
+/* PAUSE */
+#pause-hobbies {
+  min-height: 300px;
+  background-color: #000;
+  background: url(../img/test5.jpg) no-repeat fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* CONTACT */
+#contact {
+  min-height: 500px;
+  background-color: #fff;
+}
+
+.circular {
+  margin: 6rem auto;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 4.6875rem;
+  -webkit-border-radius: 4.6875rem;
+  -moz-border-radius: 4.6875rem;
+  background: url("../img/test6.jpg") no-repeat 50% 50% scroll;
+  background-size: cover;
 }
 
 .social-list {
@@ -295,13 +270,8 @@ footer p {
   color: #A7DBD8;
 }
 
-.circular {
-  margin: 20px auto 50px auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  -webkit-border-radius: 75px;
-  -moz-border-radius: 75px;
-  background: url("../img/test6.jpg") no-repeat 50% 50% scroll;
-  background-size: cover;
+/* FOOTER */
+footer p {
+  text-align: center;
+  font-size: 80%;
 }

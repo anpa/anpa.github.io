@@ -11,18 +11,19 @@
 }
 
 .row {
-  max-width: 1040px;
   margin: 0 auto;
-  padding: 0 20px;
+  width: 90%;
+  max-width: 1040px;
+}
+
+[class^="col-"] {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width: 40rem) {
-  [class^="col-"] {
-    float: left;
-    list-style: none;
-    position: relative;
-  }
-
   .col-1 {
     width: 8.3333333333%;
   }
