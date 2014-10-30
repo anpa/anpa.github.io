@@ -15,10 +15,11 @@
 .row {
     max-width: 1040px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 @media (min-width: 40rem) {
-    
+
     [class^="col-"] {
         float: left;
         list-style: none;

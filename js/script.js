@@ -13,3 +13,21 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+
+$('#toggle-nav').click(function() {
+    if($('header nav').hasClass('nav-closed')) {
+        $('header nav').removeClass('nav-closed');
+        $('header nav').addClass('nav-open');
+    } else {
+        $('header nav').removeClass('nav-open');
+        $('header nav').addClass('nav-closed');
+    }
+});
+
+/*
+$("nav li a").click(function() {
+    if($('header nav').hasClass('nav-open')) {
+        $('header nav').removeClass('nav-open');
+        $('header nav').addClass('nav-closed');
+    }
+});*/
