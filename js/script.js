@@ -31,3 +31,11 @@ $("nav li a").click(function() {
         $('header nav').addClass('nav-closed');
     }
 });*/
+
+$(window).scroll(function() {
+  if ($("header").offset().top > 100) {
+    if(!$("header").hasClass("solid")) $("header").addClass("solid");
+  } else {
+    if($("header").hasClass("solid")) $("header").removeClass("solid");
+  }
+});

@@ -42,13 +42,20 @@ p {
 }
 
 /* HEADER */
+.solid {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 header {
   width: 100%;
   position: fixed;
   z-index: 1030;
   line-height: 3.5rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: 0 0;
   color: white;
+  font-size: 0.8rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 header .logo {
   display: block;
@@ -89,10 +96,13 @@ header nav ul li a {
   line-height: 2.33333rem;
 }
 header nav ul li:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 40rem) {
+  header {
+    background: 0 0;
+  }
   header #toggle-nav {
     display: none;
   }
@@ -139,7 +149,7 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 150, 225, 0.4);
+  background-color: rgba(0, 150, 225, 0.5);
 }
 #home div#caption {
   position: relative;
@@ -215,13 +225,6 @@ section {
   margin: 0;
 }
 
-.project:hover img {
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px);
-}
 .project:hover .overlay {
   visibility: visible;
 }
