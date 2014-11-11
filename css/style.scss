@@ -54,7 +54,7 @@ header a, #home a, #work a{
 
 p {
 	font-family: $font-neutron;
-	font-size: 1.1rem;
+	font-size: 1.15rem;
 }
 
 /* HEADER */
@@ -119,7 +119,7 @@ header{
 				}
 			}
 
-			li:hover {
+			li:hover, li.active {
 				background-color: rgba(255,255,255, 0.3);
 			}
 		}
@@ -174,7 +174,7 @@ header{
 				margin-right: 0;
 			}
 
-			ul li:hover, ul li:active {
+			ul li:hover, ul li.active {
 				background: 0 0;
 
 				a {

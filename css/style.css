@@ -46,7 +46,7 @@ header a, #home a, #work a {
 
 p {
   font-family: "Neuton", serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 /* HEADER */
@@ -100,7 +100,7 @@ header nav ul li a {
   width: 100%;
   line-height: 2.33333rem;
 }
-header nav ul li:hover {
+header nav ul li:hover, header nav ul li.active {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -140,10 +140,10 @@ header nav ul li:hover {
   header nav ul li:last-child {
     margin-right: 0;
   }
-  header nav ul li:hover, header nav ul li:active {
+  header nav ul li:hover, header nav ul li.active {
     background: 0 0;
   }
-  header nav ul li:hover a, header nav ul li:active a {
+  header nav ul li:hover a, header nav ul li.active a {
     line-height: 1.5rem;
     border-bottom: 3px solid #fff;
   }
