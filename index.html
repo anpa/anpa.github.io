@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
     <head>
         <title>André Alves - Software Developer</title>
 
@@ -31,161 +31,176 @@
     <body>
         <header>
             <div class="row">
-                <a href="#home" class="logo">
+                <a href="#home" id="logo">
                     <h1>André Alves<i class="fa fa-send"></i></h1>
                 </a>
                 <div id="toggle-nav"><i class="fa fa-bars"></i></div>
                 <nav class="nav-closed">
                     <ul>
+                        <li><a href="#work">Work</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+       <!-- <div id="teste"><h1>A</h1></div> -->
+
         <section id="home">
-            <div id="filter"></div>
-            <div class="row">
-                <div class="col-12">
-                    <div id="caption">
-                        <h1>Hello!</h1>
-                        <h4>I'm a Software Developer and a Daydreamer.</h4>
-                        </br>
-                        <h6>Let's make the world a better place, shall we?</h6>
-                        </br>
-                        <a href="#about"><i class="fa fa-chevron-circle-down fa-2x"></i></a>
+            <div class="wrapper">
+                <div class="filter"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="caption">
+                            <h1>Hello!</h1>
+                            <h4>I'm a Software Developer and a Daydreamer.</h4>
+                            <p>Let's make the world a better place, shall we?</p>
+                            </br>
+                            <a href="#work"><i class="fa fa-chevron-circle-down fa-2x"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>  
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Things that I've been doing</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="project">
+                           <div class="overlay">
+                                <div class="caption">
+                                    <h3>FIT</h3>
+                                    <p>A web and a mobile solution for gyms and fitness centers.</p>
+                                    <a href="https://www.youtube.com/watch?v=akV3_t98nQo" target="_blank">Video</a>
+                                </div>
+                            </div>
+                            <img src="img/fit.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="overlay">
+                                <div class="caption">
+                                    <h3>Eco-Efficiency Portal</h3>
+                                    <p>A Joomla-based platform that collects consumptions and supports decisions to make municipal buildings more efficient and greener.</p>
+                                </div>
+                            </div>
+                            <img src="img/gaianima.png" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="overlay">
+                                <div class="caption">
+                                    <h3>Kamstrup SRS</h3>
+                                    <p>A mobile application prototype for a geographic information system (GIS) to assist Kamstrup operators finding and reading wireless meters.</p>
+                                </div>
+                            </div>
+                            <img src="img/kamstrup.png" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="overlay">
+                                <div class="caption">
+                                    <h3>CloudVideo</h3>
+                                    <p>A personal video-on-demand application to upload videos and play them anywere.</p>
+                                    <a href="https://github.com/anpa/cloudvideo" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <img src="img/cloudvideo.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="overlay">
+                                <div class="caption">
+                                    <h3>mxfSPEEDRAIL Mobile</h3>
+                                    <p>Master's dissertation. A prototype for a video ingesting tool to be able to be used both in desktops and tablets.</p>
+                                    <a href="MS_AndreAlves.pdf" target="_blank">PDF</a>
+                                    <a href="http://paginas.fe.up.pt/~ei08119/wiki" target="_blank">Wiki</a>
+                                    <a href="http://paginas.fe.up.pt/~ei08119/wiki" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <img src="img/mog.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <a href="#contact">
+                                <div class="overlay">
+                                    <div class="caption">
+                                        <p>Contact me to start asap an awesome project.</p>
+                                    </div>
+                                </div>
+                                <img src="img/bigthingthin.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="about">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Who is this guy?</h2>
+            <div class="wrapper">
+                <div class="about-filter"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="circular"></div>
+                        <h2>Who's this guy?</h2>
 
-                    <p>I’m a full stack web developer with a particular interest on front-end development and interaction design. Most of all, I like to generate ideas, to create things, to solve problems and to make the difference.</p>
+                        <p>I’m a full stack web developer with a particular interest on front-end development and interaction design. I consider myself a technology agnostic because technology is constantly changing.</p>
+                        <p>I like to see things from different perspectives. I tend to push myself outside the comfort zone because I do believe that there is magic there. Most of all, I like to generate ideas, to create things, to solve problems and to make the difference.</p>
 
-                    <p>I like to see things from different perspectives and to find magic in the uncomfortable zone, as cliché as it may sound.</p>
+                        <p>I have <a href="https://www.holstee.com/pages/manifesto" target="_blank">Holstee Manifesto</a> as my main motto.</p>
 
-                    <p>Oh! And I also do worship cheesecake.</p>
+                        <p>Oh! And I also do worship cheesecake.</p>
+                        <br/>
 
-<!--
-                    <p>I love technology. I really do.</p>
+    <!--
+                        <p>I love technology. I really do.</p>
 
-                    <p>When I was young I was always saying that I wanted to be a Computer Engineer when I grew up. Once I even imagined that my bed pillow was a keyboard and my bedroom wall was the screen. 21 years later, despite the fact that I am a little bit taller, I am still that kid with that fascinated look whenever he sees a computer. It really thrills me: the automation, the binary code, ... how is even possible to make a computer think?</p>
+                        <p>When I was young I was always saying that I wanted to be a Computer Engineer when I grew up. Once I even imagined that my bed pillow was a keyboard and my bedroom wall was the screen. 21 years later, despite the fact that I am a little bit taller, I am still that kid with that fascinated look whenever he sees a computer. It really thrills me: the automation, the binary code, ... how is even possible to make a computer think?</p>
 
-                    <p>I finished my Master in Informatics and Computing Engineering at the Faculty of Engineering of the University of Porto. It's been a quite interesting journey discovering and learning new things, getting mature knowledge about the world of computers. My main areas of interest are: Web Development, Multimedia, Human Computer Interaction, Mobile Computing and Distributed Systems. I also moved to Horsens (Denmark) to spend one semester at VIA University College as an Erasmus exchange student. It's been a great experience getting to know different cultures, different lifestyles, different perspectives.</p>
+                        <p>I finished my Master in Informatics and Computing Engineering at the Faculty of Engineering of the University of Porto. It's been a quite interesting journey discovering and learning new things, getting mature knowledge about the world of computers. My main areas of interest are: Web Development, Multimedia, Human Computer Interaction, Mobile Computing and Distributed Systems. I also moved to Horsens (Denmark) to spend one semester at VIA University College as an Erasmus exchange student. It's been a great experience getting to know different cultures, different lifestyles, different perspectives.</p>
 
-                    <p>In the mean time, I am also a big fan of arts, from design to performing arts, including dance. I love to dance! I started dancing 7 years ago and today translating music into movement is one of my favourite pleasures.</p>
+                        <p>In the mean time, I am also a big fan of arts, from design to performing arts, including dance. I love to dance! I started dancing 7 years ago and today translating music into movement is one of my favourite pleasures.</p>
 
-                    <p>Above of all, I wish one day I'll make a difference.</p> -->
+                        <p>Above of all, I wish one day I'll make a difference.</p> -->
 
-                    <a class="btn" href="cv.pdf" target="_blank">Get a free copy of an awesome CV!</a>
+                        <a class="btn" href="cv_andrealves.pdf" target="_blank">Here, take my CV with you!</a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="pause-work"></section>
-
-        <section id="projects">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Things that I've been doing</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <div class="project">
-                       <div class="overlay">
-                            <div class="caption">
-                                <h3>FIT</h3>
-                                <p>This project was lots of fun!</p>
-                            </div>
-                        </div>
-                        <img src="img/fit.jpg" />
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="project">
-                        <div class="overlay">
-                            <div class="caption">
-                                <h3>Eco-Efficiency Portal</h3>
-                                <p>This project was lots of fun!</p>
-                            </div>
-                        </div>
-                        <img src="img/gaianima.png" />
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="project">
-                        <div class="overlay">
-                            <div class="caption">
-                                <h3>Kamstrup SRS</h3>
-                                <p>This project was lots of fun!</p>
-                            </div>
-                        </div>
-                        <img src="img/kamstrup.png" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <div class="project">
-                        <div class="overlay">
-                            <div class="caption">
-                                <h3>CloudVideo</h3>
-                                <p>This project was lots of fun!</p>
-                            </div>
-                        </div>
-                        <img src="img/cloudvideo.jpg" />
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="project">
-                        <div class="overlay">
-                            <div class="caption">
-                                <h3>mxfSPEEDRAIL Mobile</h3>
-                                <p>This project was lots of fun!</p>
-                            </div>
-                        </div>
-                        <img src="img/mog.jpg" />
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="project">
-                        <div class="overlay">
-                            <div class="caption">
-                                <h3>The Next Big Thing!</h3>
-                                <p>Contact me to start asap an awesome project.</p>
-                            </div>
-                        </div>
-                        <img src="img/idea.png" />
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="pause-hobbies"></section>
 
         <section id="contact">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Let's have a coffee!</h2>
-                    <div class="circular"></div>
-                    <ul class="social-list">
-                        <li><a href="http://www.facebook.com/anpalves" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-                        <li><a href="http://twitter.com/anpalves" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-                        <li><a href="http://www.linkedin.com/in/anpalves" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="http://stackoverflow.com/users/1242501/bisc8" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
-                        <li><a href="http://www.github.com/anpa" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-                        <li><a href="mailto:andrenpalves@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
-                    </ul>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <h2>Let's have a coffee!</h2>
+                        <p>I like talking. Whether to talk about a project or to discuss the philosophical questions behind the universe, just <a href="mailto:andrenpalves@gmail.com" target="_blank">drop me a line</a> and we'll figure it out.</p>
+                        <!-- <a  class="btn" href="mailto:andrenpalves@gmail.com" target="_blank">Send me an email</a> -->
+                        <br/>
+                        
+                        <ul class="social-list">
+                            <li><a href="http://www.facebook.com/anpalves" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><a href="http://twitter.com/anpalves" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                            <li><a href="http://www.linkedin.com/in/anpalves" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="http://stackoverflow.com/users/1242501/bisc8" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
+                            <li><a href="http://www.github.com/anpa" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="http://open.spotify.com/user/1144180758" target="_blank"><i class="fa fa-spotify fa-2x"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,12 +208,13 @@
         <footer>
             <div class="row">
                 <div class="col-12">
-                    <p>© 2014 André Alves</p>
+                    <p>© 2014 Made by André Alves. Check the project <a href="https://github.com/anpa/Personal" target="_blank">here</a>.</p>
                 </div>
             </div>
         </footer>
             
         <!-- JS LINKS -->
+        <script src="lib/modernizr/modernizr.js" type="text/javascript"></script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/script.js"></script>
 

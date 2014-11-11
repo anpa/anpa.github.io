@@ -6,11 +6,19 @@
 * Large screens (1024px = 64rem)
 */
 
-$background-color: #51a7b6;
+$filter-color: rgba(0, 150, 225, 0.6);
 $font-neutron: 'Neuton', serif;
 $font-montserrat: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 $header-size:3.5rem;
 $header-background: rgba(0, 0, 0, 0.8);
+
+//Color Pallette
+$color-one: red;
+$color-two: blue;
+$color-three: yellow;
+$color-four: orange;
+$color-five: violet;
+
 
 html { font-size: 100%; }
 @media (min-width: 40rem) {
@@ -31,21 +39,25 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+h2 {
+	margin-bottom: 1rem;
+}
+
 a {
+	color: #69D2E7;
+}
+
+header a, #home a, #work a{
 	text-decoration: none;
-	color: white;
+	color: #fff;
 }
 
 p {
 	font-family: $font-neutron;
-	font-size: 20px;
+	font-size: 1.1rem;
 }
 
 /* HEADER */
-
-.solid {
-	background-color: $header-background;
-}
 
 header{
 	width: 100%;
@@ -53,14 +65,14 @@ header{
 	z-index: 1030;
 	line-height: $header-size;
 	
-	background: 0 0;
+	background-color: $header-background;
 	color: white;
 	font-size: 0.8rem;
 
 	-webkit-transition: all 1s;
     transition: all 1s;
-	
-	.logo {
+
+	#logo {
 		display: block;
 		float: left;
 		text-transform: uppercase;
@@ -97,7 +109,7 @@ header{
 			li {
 				border-top: solid gray 1px;
 				//text-align: center;	
-				//text-transform: uppercase;	
+				text-transform: uppercase;	
 
 				a {
 					padding: 10px 0;
@@ -116,9 +128,26 @@ header{
 
 @media (min-width: 40rem) {
 
-	header {
+	.solid {
+		background-color: $header-background;
+	}
 
+	header {
 		background: 0 0;
+
+		#logo:hover {
+			//TODO
+		}
+
+		#logo {
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			letter-spacing: -3px;
+
+			-webkit-transition: all 0.1s;
+    		transition: all 0.1s;
+		}
 
 		#toggle-nav {
 			display: none;
@@ -144,6 +173,15 @@ header{
 			ul li:last-child {
 				margin-right: 0;
 			}
+
+			ul li:hover, ul li:active {
+				background: 0 0;
+
+				a {
+					line-height: 1.5rem;
+					border-bottom: 3px solid #fff;
+				}
+			}
 		}
 	}
 }
@@ -152,16 +190,24 @@ header{
 /* SECTIONS */
 
 section {
+	display: table;
+	width: 100%;
 	text-align: center;
 	padding: $header-size+1rem 0;
+
+	.wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
 }
+
 
 /* HOME */
 
 #home {
 	background-color: #000;
 	background: url(../img/test8.JPG) no-repeat fixed;
-	background-position: center bottom;
+	background-position: 50% 75%;
 	
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -171,15 +217,14 @@ section {
 	font-size: 150%;
 	color: white;
 
-	padding: 12.5rem 0;
 	height: 100%;
 
-	div#filter {
+	div.filter {
 		position: absolute;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 150, 225, 0.5);
+		background-color: $filter-color;
 	}
 
 	div#caption {
@@ -191,7 +236,33 @@ section {
 /* ABOUT */
 
 #about {
-	background-color: #fff;
+	position: relative;
+	color: white;
+	background: url(../img/test3.jpg) no-repeat fixed;
+
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+	div.about-filter {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $filter-color;
+	}
+}
+
+.circular {
+	margin: 0 auto 1rem auto;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 3rem;
+	-webkit-border-radius: 3rem;
+	-moz-border-radius: 3rem;
+	background: url('../img/test10.JPG') no-repeat 50% 40% scroll;
+	background-size: cover;
 }
 
 .btn {
@@ -228,9 +299,9 @@ section {
 	-o-background-size: cover;
 }
 
-/* PROJECTS */
+/* WORK */
 
-#projects {
+#work {
 	background-color: #ffffff;
 }
 
@@ -249,19 +320,26 @@ section {
 		width: 100%;
 		height: 100%;
 
-		background-color: rgba(0,150,225,0.5);
+		background-color: rgba(0,150,225,0.7);
 		z-index: 100;
 
 		.caption {
-			position: absolute;
+			display: table-cell;
+			vertical-align: middle;
 			width: 100%;
-			bottom: 0;
 			padding: 1.5rem;
 			color: white;
-			text-align: left;
+			text-align: center;
 
 			p {
-				margin: 0;
+				margin-bottom: 20px;
+			}
+
+			a {
+				font: $font-neutron;
+				margin-top: 10px;
+				border: solid 2px white;
+				padding: 7px 15px;
 			}
 		}
 	}
@@ -289,25 +367,16 @@ section {
 /* CONTACT */
 
 #contact {
-	min-height: 500px;
+	height: 95%;
 	background-color: #fff;
-}
-
-.circular {
-	margin: 6rem auto;
-	width: 9.375rem;
-	height: 9.375rem;
-	border-radius: 4.6875rem;
-	-webkit-border-radius: 4.6875rem;
-	-moz-border-radius: 4.6875rem;
-	background: url('../img/test6.jpg') no-repeat 50% 50% scroll;
-	background-size: cover;
 }
 
 .social-list {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    font-size: 0.8rem;
 
     li {
         display: inline;
@@ -326,9 +395,20 @@ section {
 /* FOOTER */
 
 footer p {
+	height: 5%;
 	text-align: center;
 	font-size: 80%;
 }
 
 
 
+/* TODO
+#teste {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 300px;
+	position: fixed;
+	
+	color: rgba(0,0,0,0.3);
+} */

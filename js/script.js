@@ -16,11 +16,12 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 $('#toggle-nav').click(function() {
     if($('header nav').hasClass('nav-closed')) {
-        $('header nav').removeClass('nav-closed');
-        $('header nav').addClass('nav-open');
+        $('header nav').removeClass('nav-closed').addClass('nav-open');
+        $('#toggle-nav .fa-bars').removeClass('fa-bars').addClass('fa-close');
+
     } else {
-        $('header nav').removeClass('nav-open');
-        $('header nav').addClass('nav-closed');
+        $('header nav').removeClass('nav-open').addClass('nav-closed');
+        $('#toggle-nav .fa-close').removeClass('fa-close').addClass('fa-bars');
     }
 });
 
