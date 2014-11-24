@@ -47,7 +47,7 @@ a {
 	color: #69D2E7;
 }
 
-header a, #home a, #work a{
+header a, #home a {
 	text-decoration: none;
 	color: #fff;
 }
@@ -306,13 +306,13 @@ section {
 }
 
 .project {
-	cursor: pointer;
 
 	img {
 		width: 100%;
 		height: auto;
 		display: block;
 	}
+	
 
 	.overlay {
 		visibility: hidden;
@@ -320,27 +320,33 @@ section {
 		width: 100%;
 		height: 100%;
 
+		color: white;
 		background-color: rgba(0,150,225,0.7);
-		z-index: 100;
 
-		.caption {
-			display: table-cell;
-			vertical-align: middle;
-			width: 100%;
-			padding: 1.5rem;
+		width: 100%;
+		padding: 1.5rem;
+		text-align: center;
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		p.tech {
+			font-size: 0.9rem;
+		}
+
+		a {
 			color: white;
-			text-align: center;
+			text-decoration: none;
+			font-family: $font-montserrat;
+			margin-top: 10px;
+			border: solid 2px white;
+			padding: 7px 15px;
+		}
 
-			p {
-				margin-bottom: 20px;
-			}
-
-			a {
-				font: $font-neutron;
-				margin-top: 10px;
-				border: solid 2px white;
-				padding: 7px 15px;
-			}
+		a:hover {
+			color: rgba(0,150,225,0.7);
+			background-color: white;
 		}
 	}
 }
@@ -350,6 +356,7 @@ section {
 		visibility: visible;
 	}
 }
+
 
 /* PAUSE */
 

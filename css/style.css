@@ -39,7 +39,7 @@ a {
   color: #69D2E7;
 }
 
-header a, #home a, #work a {
+header a, #home a {
   text-decoration: none;
   color: #fff;
 }
@@ -250,9 +250,6 @@ section .wrapper {
   background-color: #ffffff;
 }
 
-.project {
-  cursor: pointer;
-}
 .project img {
   width: 100%;
   height: auto;
@@ -263,25 +260,29 @@ section .wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
+  color: white;
   background-color: rgba(0, 150, 225, 0.7);
-  z-index: 100;
-}
-.project .overlay .caption {
-  display: table-cell;
-  vertical-align: middle;
   width: 100%;
   padding: 1.5rem;
-  color: white;
   text-align: center;
 }
-.project .overlay .caption p {
+.project .overlay p {
   margin-bottom: 20px;
 }
-.project .overlay .caption a {
-  font: "Neuton", serif;
+.project .overlay p.tech {
+  font-size: 0.9rem;
+}
+.project .overlay a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   border: solid 2px white;
   padding: 7px 15px;
+}
+.project .overlay a:hover {
+  color: rgba(0, 150, 225, 0.7);
+  background-color: white;
 }
 
 .project:hover .overlay {
