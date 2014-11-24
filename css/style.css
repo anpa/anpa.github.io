@@ -160,6 +160,30 @@ section .wrapper {
   vertical-align: middle;
 }
 
+/* ERROR */
+#error {
+  background-color: #000;
+  background: url(../img/rain.gif) no-repeat fixed;
+  background-position: 50% 75%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-size: 150%;
+  color: white;
+  height: 100%;
+}
+#error div.filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 150, 225, 0.6);
+}
+#error div#caption {
+  position: relative;
+}
+
 /* HOME */
 #home {
   background-color: #000;
