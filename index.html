@@ -38,7 +38,7 @@
                 <a href="#home" id="logo">
                     <h1>André Alves<i class="fa fa-send"></i></h1>
                 </a>
-                <div id="toggle-nav"><i class="fa fa-bars"></i></div>
+                <a href="#" id="toggle-nav"><i class="fa fa-bars"></i></a>
                 <nav class="nav-closed">
                     <ul>
                         <li><a href="#work">Work</a></li>
@@ -61,7 +61,10 @@
                             <h4>I'm a Software Developer and a Daydreamer.</h4>
                             <p>Let's make the world a better place, shall we?</p>
                             </br>
-                            <a href="#work"><i class="fa fa-chevron-circle-down fa-2x"></i></a>
+                            <a class="button inverse" href="#work">
+                                See more
+                                <!-- <i class="fa fa-chevron-circle-down fa-2x"></i> -->
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -78,79 +81,76 @@
 
                 <div class="row">
                     <div class="col-4">
+                        
                         <div class="project">
-                            <div class="overlay">
-                                <h3>FIT</h3>
-                                <p>A web and mobile solution for gyms and fitness centers.</p>
-                                <p class="tech">Ruby on Rails, Android, HTML, CSS, Javascript</p>
-                                <a href="https://www.youtube.com/watch?v=akV3_t98nQo" target="_blank">Video</a>
-                            </div>
                             <img src="img/fit.jpg" />
+                            <div class="content">
+                                <h3>FIT</h3>
+                                <p>A web and mobile solution for gyms and fitness centers. Includes a website, a mobile website and an Android app.</p>
+                                <p class="tech">Ruby on Rails, Android, HTML, CSS, Javascript</p>
+                                <a class="button" href="https://www.youtube.com/watch?v=akV3_t98nQo" target="_blank">Video</a>
+                            </div>
+                            <div class="bg"></div>
                         </div>
+
                     </div>
+
                     <div class="col-4">
                         <div class="project">
-                            <div class="overlay">
-                                <div class="caption">
-                                    <h3>Eco-Efficiency Portal</h3>
-                                    <p>A Joomla-based platform that collects consumptions and supports decisions to make municipal buildings more efficient and greener.</p>
-                                    <p class="tech">Joomla, PHP, MySQL, HTML, CSS, Javascript</p>
-                                </div>
-                            </div>
                             <img src="img/gaianima.png" />
+                            <div class="content">
+                                <h3>Eco-Efficiency Portal</h3>
+                                <p>A Joomla-based platform that collects consumptions and supports decisions to make municipal buildings more efficient and greener.</p>
+                                <p class="tech">Joomla, PHP, MySQL, HTML, CSS, Javascript</p>
+                            </div>
+                            <div class="bg"></div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project">
-                            <div class="overlay">
-                                <div class="caption">
-                                    <h3>Kamstrup SRS</h3>
-                                    <p>A mobile application prototype for a geographic information system (GIS) to assist Kamstrup operators finding and reading wireless meters.</p>
-                                    <p class="tech">Android, Java, SQLite, Google Maps API</p>
-                                </div>
-                            </div>
                             <img src="img/kamstrup.png" />
+                            <div class="content">
+                                <h3>Kamstrup SRS</h3>
+                                <p>A mobile application prototype for a geographic information system (GIS) to assist Kamstrup operators finding and reading wireless meters.</p>
+                                <p class="tech">Android, Java, SQLite, Google Maps API</p>
+                            </div>
+                            <div class="bg"></div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project">
-                            <div class="overlay">
-                                <div class="caption">
-                                    <h3>CloudVideo</h3>
-                                    <p>A personal video-on-demand application to upload videos and play them anywere.</p>
-                                    <p class="tech">Node.js, Express.js, MongoDB, Handlebars.js, Socket.io, Passport.js, FFMPEG, Bootstrap</p>
-                                    <a href="https://github.com/anpa/cloudvideo" target="_blank">Github</a>
-                                </div>
-                            </div>
                             <img src="img/cloudvideo.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="project">
-                            <div class="overlay">
-                                <div class="caption">
-                                    <h3>mxfSPEEDRAIL Mobile</h3>
-                                    <p>Master's dissertation. A prototype for a video ingesting tool to be able to be used both in desktops and tablets.</p>
-                                    <p class="tech">HTML, CSS, Javascript, Backbone.js, User Centered Design</p>
-                                    <a href="doc/MS_AndreAlves.pdf" target="_blank">PDF</a>
-                                    <a href="http://paginas.fe.up.pt/~ei08119/wiki" target="_blank">Wiki</a>
-                                    <a href="http://paginas.fe.up.pt/~ei08119/wiki" target="_blank">Github</a>
-                                </div>
+                            <div class="content">
+                                <h3>CloudVideo</h3>
+                                <p>A personal video-on-demand application to upload videos and play them anywere.</p>
+                                <p class="tech">Node.js, Express.js, MongoDB, Handlebars.js, Socket.io, Passport.js, FFMPEG, Bootstrap</p>
+                                <a class="button" href="https://github.com/anpa/cloudvideo" target="_blank">Github</a>
                             </div>
-                            <img src="img/mog.jpg" />
+                            <div class="bg"></div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project">
-                            <a href="#contact">
-                                <div class="overlay">
-                                    <div class="caption">
-                                        <h3>Let's make it real!</h3>
-                                        <p>Contact me to start asap an awesome project.</p>
-                                    </div>
-                                </div>
-                                <img src="img/bigthingthin.jpg" />
-                            </a>
+                            <img src="img/mog.jpg" />
+                            <div class="content">
+                                <h3>mxfSPEEDRAIL Mobile</h3>
+                                <p>Master's dissertation. A prototype for a video ingesting tool to be able to be used both in desktops and tablets.</p>
+                                <p class="tech">HTML, CSS, Javascript, Backbone.js, User Centered Design</p>
+                                <a class="button" href="doc/MS_AndreAlves.pdf" target="_blank">PDF</a>
+                                <a class="button" href="http://paginas.fe.up.pt/~ei08119/wiki/" target="_blank">Wiki</a>
+                            </div>
+                            <div class="bg"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <img src="img/bigthingthin.jpg" />
+                            <div class="content">
+                                <h3>Let's make it real!</h3>
+                                <p>Contact me to start asap an awesome project.</p>
+                                <a class="button" href="#contact">Let's go!</a>
+                            </div>
+                            <div class="bg"></div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
 
                         <p>Above of all, I wish one day I'll make a difference.</p> -->
 
-                        <a class="btn" href="doc/CV_AndreAlves.pdf" target="_blank">Here, take my CV with you!</a>
+                        <a class="button inverse" href="doc/CV_AndreAlves.pdf" target="_blank">Here, take my CV with you!</a>
                     </div>
                 </div>
             </div>
@@ -196,10 +196,12 @@
                 <div class="row">
                     <div class="col-8 offset-2">
                         <h2>Let's have a coffee!</h2>
-                        <p>I like talking. Whether to talk about a project or to discuss the philosophical questions behind the universe, just <a href="mailto:andrenpalves@gmail.com" target="_blank">drop me a line</a> and we'll figure it out.</p>
+                        <p>I like talking. Whether to talk about a project or to discuss the philosophical questions behind the universe, just drop me a line and we'll figure it out.</p>
                         <!--<p>Email me at <a href="mailto:andrenpalves@gmail.com" target="_blank">andrenpalves@gmail.com</a>.</p>-->
                         <!-- <a  class="btn" href="mailto:andrenpalves@gmail.com" target="_blank">Send me an email</a> -->
-                        <br/>
+                        <a class="button" href="mailto:andrenpalves@gmail.com" target="_blank">Send me an email</a>
+                        
+                        <p>Or follow me around the web:</p>
                         
                         <ul class="social-list">
                             <li><a href="http://www.facebook.com/anpalves" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
