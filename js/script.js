@@ -8,7 +8,7 @@ console.log(""+
 " /_/    \\_\\_| |_|\\__,_|_|  \\___| /_/    \\_\\_| \\_/ \\___||___/ \n"+
 "                                                             "+"\n"+
 "                                                             "+"\n"+
-"Hello!\n\n"+
+"Hello there!\n\n"+
 "This page was built using great tools like Sublime Text 2 and Prepos.\n"+
 "It also uses great libraries such as jQuery, Modernizr and Normalize.js.\n"+
 "Fonts are served by the awesomeness of Google Fonts. I am using Montserrat and Neutron here.\n\n"+
