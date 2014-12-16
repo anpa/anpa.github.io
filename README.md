@@ -7,13 +7,13 @@ It also uses great libraries: jQuery, Modernizr.js and Normalize.js.
 Fonts are served by the awesomeness of Google Fonts. I am using Montserrat and Neutron.
 
 
-Testing (TODO)
-===
-*Browsers
-*Javascript disabled
-*CSS disabled
+#### Testing (TODO)
+
+* Browsers
+* Javascript disabled
+* CSS disabled
 
 
-Compatibility (TODO)
-===
+#### Compatibility (TODO)
+
 This website is supported by the main browsers.
