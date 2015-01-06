@@ -2,8 +2,6 @@
 
 ---
 
-## DESCRIPTION
-
 I created this project in order to show a little bit of myself and my work as a software/web developer. I wanted it to be simple and appealing, so it can act as a personal website, portefolio and business card. During its development I made some decisions that I recorded here.
 
 * **Responsiveness:** the rise of mobile technology says it all. I wanted this website to be responsive so I defined 2 breakpoints (40rem and 64rem) and introduced some media-queries in CSS, following a mobile-first principle.
@@ -13,8 +11,6 @@ I created this project in order to show a little bit of myself and my work as a 
 * **SASS:** yes, I'm using SASS! It's a super trendy "feature" but, more important, it helps a lot when it comes to CSS productivity.
 
 ---
-
-## DETAILS
 
 #### Libraries
 
@@ -37,7 +33,7 @@ I created this project in order to show a little bit of myself and my work as a 
 
 ---
 
-## TO-DO LIST
+#### TO-DO List
 
 * Apply modernizr
 * Create a blog
