@@ -37,6 +37,7 @@ I created this project in order to show a little bit of myself and my work as a 
 
 * Apply modernizr
 * Create a blog
+* Try Grunt instead of Prepos
 * Test! Test! Test!
     * Browsers compatibility *(keep testing)*
     * Progressive enhancement
